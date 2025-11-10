@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aiddescription">NFC Token Service AID</string>
+    <string name="app_name">NFC Auth</string>
+    <string name="servicedesc">NFC Token Service</string>
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
+</resources>

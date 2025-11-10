@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_nfc_scan
+drawable steinel
+drawable steinel_logo_placeholder
+id button_role_employee
+id button_role_reader
+id employee_logo_steinel
+id group_employee_ui
+id group_reader_ui
+id group_role_selection
+id image_nfc_scan_employee
+id image_nfc_scan_reader
+id logo_steinel
+id reader_logo_steinel
+id text_access_granted
+id text_employee_name
+id text_please_scan
+id text_ready_to_scan
+id text_success
+id text_welcome
+layout activity_main
+string aiddescription
+string app_name
+string servicedesc
+style Theme.AppCompat.Light.NoActionBar
+xml apduservice

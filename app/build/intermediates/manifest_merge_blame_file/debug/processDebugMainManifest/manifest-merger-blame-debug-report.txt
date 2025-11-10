@@ -1,0 +1,167 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.nfcauth"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.NFC" />
+11-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:4:5-62
+11-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:4:22-59
+12
+13    <uses-feature
+13-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:5:5-81
+14        android:name="android.hardware.nfc"
+14-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:5:19-54
+15        android:required="true" />
+15-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:5:55-78
+16
+17    <permission
+17-->[androidx.core:core:1.13.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\bfb7461244bbc07ed99de4f3a4128a71\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+18        android:name="com.example.nfcauth.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.13.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\bfb7461244bbc07ed99de4f3a4128a71\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.13.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\bfb7461244bbc07ed99de4f3a4128a71\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.example.nfcauth.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.13.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\bfb7461244bbc07ed99de4f3a4128a71\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.13.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\bfb7461244bbc07ed99de4f3a4128a71\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:6:5-31:19
+24        android:allowBackup="true"
+24-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:7:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.13.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\bfb7461244bbc07ed99de4f3a4128a71\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:label="NFC Auth"
+28-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:8:9-33
+29        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+29-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:9:9-65
+30        <activity
+30-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:10:9-20:20
+31            android:name="com.example.nfcauth.MainActivity"
+31-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:10:19-66
+32            android:exported="true" >
+32-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:10:67-90
+33            <intent-filter>
+33-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:11:13-14:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:12:17-69
+34-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:12:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:13:17-77
+36-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:13:27-74
+37            </intent-filter>
+38            <intent-filter>
+38-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:15:13-19:29
+39                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+39-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:16:17-77
+39-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:16:25-74
+40
+41                <category android:name="android.intent.category.DEFAULT" />
+41-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:17:17-76
+41-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:17:27-73
+42
+43                <data android:mimeType="text/plain" />
+43-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:18:17-55
+43-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:18:23-52
+44            </intent-filter>
+45        </activity>
+46
+47        <service
+47-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:21:9-30:19
+48            android:name="com.example.nfcauth.MyHostApduService"
+48-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:21:18-51
+49            android:exported="true"
+49-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:22:13-36
+50            android:permission="android.permission.BIND_NFC_SERVICE" >
+50-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:23:13-69
+51            <intent-filter>
+51-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:24:13-26:29
+52                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+52-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:25:17-93
+52-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:25:25-90
+53            </intent-filter>
+54
+55            <meta-data
+55-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:27:13-29:55
+56                android:name="android.nfc.cardemulation.host_apdu_service"
+56-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:28:17-75
+57                android:resource="@xml/apduservice" />
+57-->C:\Users\aplesa\Downloads\NFCAuthProject_Full\app\src\main\AndroidManifest.xml:29:17-52
+58        </service>
+59
+60        <provider
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aplesa\.gradle\caches\8.13\transforms\6ac20e696c886bc30a481ce4ce8f07b6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+61            android:name="androidx.startup.InitializationProvider"
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aplesa\.gradle\caches\8.13\transforms\6ac20e696c886bc30a481ce4ce8f07b6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+62            android:authorities="com.example.nfcauth.androidx-startup"
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aplesa\.gradle\caches\8.13\transforms\6ac20e696c886bc30a481ce4ce8f07b6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+63            android:exported="false" >
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aplesa\.gradle\caches\8.13\transforms\6ac20e696c886bc30a481ce4ce8f07b6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+64            <meta-data
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aplesa\.gradle\caches\8.13\transforms\6ac20e696c886bc30a481ce4ce8f07b6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aplesa\.gradle\caches\8.13\transforms\6ac20e696c886bc30a481ce4ce8f07b6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+66                android:value="androidx.startup" />
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aplesa\.gradle\caches\8.13\transforms\6ac20e696c886bc30a481ce4ce8f07b6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\aplesa\.gradle\caches\8.13\transforms\cfa03b0c2ef782c0debb4cb1d17cfbb5\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+68-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\aplesa\.gradle\caches\8.13\transforms\cfa03b0c2ef782c0debb4cb1d17cfbb5\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+69                android:value="androidx.startup" />
+69-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\aplesa\.gradle\caches\8.13\transforms\cfa03b0c2ef782c0debb4cb1d17cfbb5\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+70            <meta-data
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+72                android:value="androidx.startup" />
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+73        </provider>
+74
+75        <receiver
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+76            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+77            android:directBootAware="false"
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+78            android:enabled="true"
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+79            android:exported="true"
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+80            android:permission="android.permission.DUMP" >
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+81            <intent-filter>
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+82                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+83            </intent-filter>
+84            <intent-filter>
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+85                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+86            </intent-filter>
+87            <intent-filter>
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+88                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+89            </intent-filter>
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+91                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aplesa\.gradle\caches\8.13\transforms\d6cb93b6f0236ffe8e6e07ca86f60539\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+92            </intent-filter>
+93        </receiver>
+94    </application>
+95
+96</manifest>

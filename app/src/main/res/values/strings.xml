@@ -1,1 +1,5 @@
-<resources><string name="app_name">NFC Auth</string></resources>
+<resources>
+    <string name="app_name">NFC Auth</string>
+    <string name="servicedesc">NFC Token Service</string>
+    <string name="aiddescription">NFC Token Service AID</string>
+</resources>

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.nfcauth.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.example.nfcauth.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.nfcauth.app-debug-31:/drawable_steinel.png.flat",
+        "source": "com.example.nfcauth.app-main-33:/drawable/steinel.png"
+    },
+    {
+        "merged": "C:\\Users\\aplesa\\.gradle\\daemon\\8.13\\com.example.nfcauth.app-debug-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\aplesa\\.gradle\\daemon\\8.13\\com.example.nfcauth.app-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\aplesa\\.gradle\\daemon\\8.13\\com.example.nfcauth.app-debug-31:\\xml_apduservice.xml.flat",
+        "source": "C:\\Users\\aplesa\\.gradle\\daemon\\8.13\\com.example.nfcauth.app-main-33:\\xml\\apduservice.xml"
+    },
+    {
+        "merged": "com.example.nfcauth.app-debug-31:/drawable_steinel_logo_placeholder.xml.flat",
+        "source": "com.example.nfcauth.app-main-33:/drawable/steinel_logo_placeholder.xml"
+    },
+    {
+        "merged": "com.example.nfcauth.app-debug-31:/drawable_ic_nfc_scan.xml.flat",
+        "source": "com.example.nfcauth.app-main-33:/drawable/ic_nfc_scan.xml"
+    }
+]
